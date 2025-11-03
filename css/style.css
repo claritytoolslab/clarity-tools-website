@@ -350,10 +350,20 @@ p {
 }
 
 .principle-icon {
-    font-size: 2rem;
     flex-shrink: 0;
     color: var(--color-accent);
-    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principle-icon svg {
+    color: var(--color-accent);
+    transition: transform var(--transition-normal);
+}
+
+.principles li:hover .principle-icon svg {
+    transform: scale(1.1);
 }
 
 .principles h4 {
@@ -459,7 +469,19 @@ p {
 
 .product-features li {
     color: var(--color-gray-lighter);
-    padding-left: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.product-features li svg {
+    flex-shrink: 0;
+    color: var(--color-accent);
+    transition: transform var(--transition-fast);
+}
+
+.product-features li:hover svg {
+    transform: translateX(2px);
 }
 
 .product-tech {
@@ -539,10 +561,20 @@ p {
 }
 
 .contact-icon {
-    font-size: 3rem;
     margin-bottom: var(--spacing-sm);
     color: var(--color-accent);
-    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    color: var(--color-accent);
+    transition: transform var(--transition-normal);
+}
+
+.contact-card:hover .contact-icon svg {
+    transform: scale(1.1);
 }
 
 .contact-card h3 {
