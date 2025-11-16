@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "5H32QT7Z34.com.Miika.Kettunen.Clarity-Events-Ai",
+        "paths": [
+          "/create",
+          "/create/*"
+        ]
+      }
+    ]
+  }
+}
